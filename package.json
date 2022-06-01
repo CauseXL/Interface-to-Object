@@ -23,6 +23,14 @@
   "categories": [
     "Other"
   ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "helloword.helloWorld",
+        "title": "Clock"
+      }
+    ]
+  },
   "activationEvents": [
     "*"
   ],
@@ -46,11 +54,13 @@
     "@types/vscode": "^1.67.0",
     "bumpp": "^7.1.1",
     "eslint": "^8.15.0",
+    "eslint-config-alloy": "^4.5.1",
     "esno": "^0.14.1",
     "pnpm": "^7.0.1",
     "rimraf": "^3.0.2",
     "tsup": "^5.12.1",
     "typescript": "^4.6.4",
+    "typescript-parser": "^2.6.1",
     "vite": "^2.9.8",
     "vitest": "^0.12.4",
     "vsce": "^2.7.0"
