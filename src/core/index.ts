@@ -6,7 +6,8 @@ export const turnToCode = async (input: string) => {
   let code = "";
   const ast = await parser.parseSource(input);
   const node = ast.declarations[0] as any;
-  const props = node.properties;
+  const props = node?.properties;
+  if (!props) throw 'Only support to transform interface to object!';
   code += `const ${node.name.toLocaleLowerCase()} = {`;
 
   const getProp = (props: any[]) => {
@@ -14,9 +15,9 @@ export const turnToCode = async (input: string) => {
     for (let prop of props) {
       if (!prop) return "";
       const { type, name } = prop;
-      if (type === "string") {
+      if (type.toLowerCase() === "string") {
         code += `${name}: "",`;
-      } else if (type === "number") {
+      } else if (type.toLowerCase() === "number") {
         code += `${name}: 0,`;
       } else if (type.indexOf("{") > -1 && type.indexOf("}") > -1) {
         // TODO: dfs?

@@ -26,10 +26,19 @@
   "contributes": {
     "commands": [
       {
-        "command": "helloword.helloWorld",
-        "title": "Clock"
+        "command": "extention.turoToObj",
+        "title": "Turn Typescript Interface to Javascript Object"
       }
-    ]
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "extention.turoToObj",
+          "group": "1_modification",
+          "when": "editorHasSelection"
+        }
+      ]
+    }
   },
   "activationEvents": [
     "*"
