@@ -2,15 +2,16 @@
   "name": "turn-interface-to-object",
   "displayName": "Turn Interface to Object",
   "version": "0.0.1",
-  "publisher": "cause_xl",
+  "publisher": "causexl",
   "packageManager": "pnpm@7.0.1",
   "description": "Turn Typescript Interface to Javascript Object",
   "keywords": [],
-  "homepage": "https://github.com/CauseXL",
+  "homepage": "https://github.com/CauseXL/Interface-to-Object",
   "license": "MIT",
   "author": "Cayden.Xiao",
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/CauseXL/Interface-to-Object"
   },
   "main": "./dist/index.js",
   "files": [
@@ -18,7 +19,7 @@
   ],
   "sideEffects": false,
   "engines": {
-    "vscode": "^1.65.0"
+    "vscode": "^1.67.0"
   },
   "categories": [
     "Other"
@@ -43,7 +44,7 @@
   "activationEvents": [
     "*"
   ],
-  "icon": "res/icon.png",
+  "icon": "assets/icon.png",
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
     "dev": "nr build --watch",
