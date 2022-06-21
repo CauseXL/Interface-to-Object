@@ -1,7 +1,7 @@
 {
   "name": "turn-interface-to-object",
   "displayName": "Turn Interface to Object",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "causexl",
   "packageManager": "pnpm@7.0.1",
   "description": "Turn Typescript Interface to Javascript Object",
@@ -29,6 +29,14 @@
       {
         "command": "extention.turoToObj",
         "title": "Turn Typescript Interface to Javascript Object"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extention.turoToObj",
+        "when": "editorHasSelection",
+        "key": "ctrl+shift+J",
+        "mac": "cmd+shift+J"
       }
     ],
     "menus": {
