@@ -1,7 +1,7 @@
 {
   "name": "turn-interface-to-object",
   "displayName": "Turn Interface to Object",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "publisher": "causexl",
   "packageManager": "pnpm@7.0.1",
   "description": "Turn Typescript Interface to Javascript Object",
